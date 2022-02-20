@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+body {
+    background-color: #594218;
+    font-family: 'Roboto', sans-serif;
+}
+/*INDEX GRID*/
+.grid__index {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10vh 70vh 10vh;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    text-align: center;
+    color: #201240;
+}
+
+.header__titulo {
+    font-size: 5vh;
+    color: black;
+    margin: 20px 20px;
+}
+
+/* NAV */
+.nav__logo {
+ margin-top: 20px;
+ margin-bottom: 10px;
+ max-width: 120px;
+ max-height: 120px;
+ border-radius: 10px;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #D9B13B ;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+
+.nav__item {
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    margin-left: 20vh;
+}
+
+.nav__search {
+    margin: 30px;
+}
+
+.nav__input {
+    height: 25px;
+}
+
+
+/* MAIN */
+.main__index {
+    grid-area: main;
+   
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.card__p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #f1f1f1;
+    width: 50%;
+    text-align: center;
+    margin-left: 3%;
+    
+    
+
+}
+.card__imagenprincipal {
+    height: 70vh;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0% 10% 0% 20%;
+}
+
+ /*integrantes GRID BODY*/
+
+.grid__integrantes {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"    
+    "grid__imagenes grid__imagenes"
+    "grid__imagenes grid__imagenes"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+.grid__imagenes{
+    grid-area: grid__imagenes;
+    display: grid;
+    height: 1000px;
+    width: 100%;
+    margin: 0% auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card2 {
+    height: 500px;
+    width: 500px;  
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.card__header{
+    background-color: #D9B13B;
+    height: 30px;
+    text-align: center;
+    
+}
+.card__epigrafe {
+    color: black;
+    font-weight: bold;
+}
+.card__body {
+    width: auto;
+    height: auto;
+}
+.card__img {
+    width: 500px;
+    height: 480px;
+}
+.card__video {
+    width: 496px;
+    height: 466px;
+}
+/* Discografia Main*/
+.grid__discografia {
+    display: grid;
+    grid-template-areas:    
+    "lista card6"
+    "card3 card3"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 20px;
+}
+.lista__titulo {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-weight: 1000;
+    font-size: xx-large;
+}
+.lista__disco {
+    color: #f1f1f1;
+    font-weight: 700;
+    text-align: center;
+    font-size: x-large;
+}
+
+.card6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.card6__table {
+    background-color: #D9B13B;
+    text-decoration: #201240;
+    border-color: black;
+    border: 1px solid black;
+}
+.card6__año {
+    background-color: #D9B13B;
+    text-decoration: #201240;
+    font-weight: bold;
+    border-color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+.card6__interior {
+    background-color: #f1f1f1;
+    border-color: black;
+    border: 1px solid black;
+    padding: 20px 20px 0px 5px;
+}
+/* etiqueta por si vuelvo agregar los subtitulos en las páginas 
+.card__titulo { 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #201240;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    }    */
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;  
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+    
+
+/*premios main*/
+.grid__premios {
+    display: grid;
+    grid-template-areas:    
+    "header"
+    "nav"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card__introp {
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.card5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card5__table {
+    background-color: #D9B13B;
+    text-decoration: #201240;
+    border-color: black;
+    border: 1px solid black;
+}
+.card5__año {
+    background-color: #D9B13B;
+    text-decoration: #201240;
+    font-weight: bold;
+    border-color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+.card5__interior {
+    background-color: #f1f1f1;
+    border-color: black;
+    border: 1px solid black;
+    padding: 20px 20px 0px 5px;
+}
+.card5__ganador {
+    background-color: rgb(0, 216, 0);
+    color: black;
+    font-weight: bold;
+    border-color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+.card5__nominado {
+    background-color: rgb(241, 132, 255);
+    color: black;
+    font-weight: bold;
+    border-color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+
+
+/*CONTACTO*/
+
+
+.grid__contacto {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "form"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.card__tit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #D9B13B;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 70vh;
+    margin-right: 70vh;
+    margin-bottom: 300px; 
+    padding-bottom: 20px;
+    background-color: #D9B13B;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/*FOOTER*/
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: #D9B13B;
+    width: 100%;
+}
+.foot__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot__redes {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.foot__logo {
+ margin-top: 20px;
+ max-width: 30px;
+ max-height: 30px;
+}
+
+.foot__link { 
+ margin-left: 60px;
+ text-decoration: none;
+}
+
+.foot__p {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+/*MEDIA Q MOBILE*/
+/*INDEX*/
+
+@media screen and (max-width:480px) {
+    .grid__index {
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    
+    /* HEADER */
+    .header {
+        display: none;
+    }
+    
+    /* NAV */
+    .nav__logo {
+     margin-top: 5px;
+     margin-bottom: 0px;
+     max-width: 120px;
+     max-height: 120px;
+     border-radius: 10px;
+    }
+    
+    .nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9B13B;
+        position: relative;
+    }
+    
+    
+    .nav__links {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5px 0px;
+    }
+    
+    .nav__item {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .nav__link {
+        text-decoration: none;
+        color: #f1f1f1;
+        font-weight: bold;
+        margin: 5px 15px;
+    }
+    
+    .nav__search {
+        margin: 5px 0px;
+    }
+    
+    .nav__input {
+        height: 20px;
+    }
+
+/* MAIN INDEX*/
+.card {
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card__p {
+    font-size: 16px;
+    width: 100%;
+    text-align: none;
+    margin: 0;
+}
+.card__imagenprincipal {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #D9B13B;
+    width: 100%;
+}
+.foot__links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.foot__logos {
+    display: flex;
+}
+.foot__redes {
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.foot__logo {
+ margin-top: 5px;
+ margin-right: 10px;
+ max-width: 30px;
+ max-height: 30px;
+}
+
+.foot__link { 
+ margin-left: 0px;
+ text-decoration: none;
+}
+
+.foot__p {
+    margin-top: 5px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+/*MEDIA INTEGRANTES*/
+
+/*integrantes GRID BODY*/
+
+.grid__integrantes {
+    grid-template-areas: 
+    "nav"    
+    "grid__imagenes"
+    "grid__imagenes"
+    "grid__imagenes" 
+    "grid__imagenes"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.grid__imagenes{
+    display: grid;
+    height: auto;
+    width: 100%;
+    margin: 0% auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2 {
+    height: 250px;
+    width: 400px;  
+    margin: 20px 0px;
+    
+}
+
+.card__header{
+    background-color: #D9B13B;
+    height: 30px;
+    text-align: center;    
+}
+
+.card__img {
+    width: 400px;
+    height: 250px;
+}
+
+/* MEDIA Discografia Main*/
+.grid__discografia {
+    display: grid;
+    grid-template-areas:    
+    "lista" 
+    "card6"
+    "card3" 
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;  
+}
+
+.lista__titulo {
+    font-size: large;
+}
+.lista__disco {
+    font-size: small;
+}
+
+.card6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card6__año {
+    padding: 5px;
+}
+.card6__interior {
+    padding: 5px;
+}
+.card3 {
+    overflow: hidden;
+    height: 350px;
+    width: 350px;  
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* MEDIA premios main*/
+
+.grid__premios {
+    display: grid;
+    grid-template-areas:    
+    "nav"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card__introp {
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: small;
+}
+
+.card5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card5__año {
+    padding: 5px;
+}
+.card5__interior {
+    padding: 5px;
+}
+.card5__ganador {
+    padding: 5px;
+}
+.card5__nominado {
+    padding: 5px;
+}
+
+/* MEDIA CONTACTO*/
+
+
+.grid__contacto {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "form"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.card__tit {
+   
+    background-color: #594218;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form {
+    margin-top: 0px;
+    margin-left: 0vh;
+    margin-right: 0vh;
+    margin-bottom: 0px; 
+    padding-bottom: 0px;
+    background-color: #594218;
+}
+
+} 
