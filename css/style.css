@@ -64,14 +64,17 @@ body {
  max-width: 120px;
  max-height: 120px;
  border-radius: 10px;
+ transition: 2s;
 }
-
+.nav__logo:hover {
+    transform: scale(2,2)
+}
 .nav {
     grid-area: nav;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     background-color: #D9B13B ;
     position: sticky;
@@ -84,14 +87,22 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 30px;
+    align-items: center;
 }
 
 .nav__item {
     list-style: none;
     flex-direction: row;
     flex-wrap: nowrap;
-}
+    transition: 0.5s;
+}  
+
+.nav__item:hover {
+    height: auto; width: auto;
+    background-color: #594218;
+    transform: scale(1,3)
+ }
+ 
 
 .nav__link {
     text-decoration: none;
