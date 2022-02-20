@@ -17,20 +17,41 @@ body {
     "nav nav"
     "main main"
     "footer footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 10vh 10vh 70vh 10vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     row-gap: 20px;
     column-gap: 20px;
 }
 
 /* HEADER */
+.header1 {
+    grid-area: header;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    color: #201240;
+}
+
 .header {
     grid-area: header;
+    display: grid;
+    justify-items: center;
     text-align: center;
     color: #201240;
 }
 
 .header__titulo {
+    font-size: 5vh;
+    color: black;
+    margin: 20px 20px;
+}
+
+.header__titulomedia {
+    grid-area: header;
+    text-align: center;
+    display: none;
+}
+.header__titmedia {
     font-size: 5vh;
     color: black;
     margin: 20px 20px;
@@ -108,9 +129,6 @@ body {
     width: 50%;
     text-align: center;
     margin-left: 3%;
-    
-    
-
 }
 .card__imagenprincipal {
     height: 70vh;
@@ -137,8 +155,9 @@ body {
 .grid__imagenes{
     grid-area: grid__imagenes;
     display: grid;
-    height: 1000px;
-    width: 100%;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
     margin: 0% auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -541,21 +560,15 @@ body {
     "grid__imagenes"
     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     row-gap: 10px;
     column-gap: 10px;
 }
 
 .grid__imagenes{
     display: grid;
-    height: auto;
-    width: 100%;
-    margin: 0% auto;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .card2 {
@@ -687,3 +700,247 @@ body {
 }
 
 } 
+
+/*MEDIA Q TABLETS*/
+/*INDEX*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .grid__index {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 10vh 70vh 10vh;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    
+    /* HEADER */
+    .header1 {
+        display: none
+    }
+
+    .header__titulo {
+        font-size: 5vh;
+        color: black;
+        margin: 20px 20px;
+    }
+    
+    .header__titulomedia {
+        display: grid;
+        justify-items: center;
+    }
+    .header__titmedia { 
+        color: black;
+    }
+
+       
+    /* NAV */
+       
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9B13B;
+    }
+       
+       
+    .nav__links {
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       flex-wrap: wrap;
+       margin: 5px 0px;
+    }
+       
+    .nav__item {
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+       
+    .nav__link {
+       text-decoration: none;
+       color: #f1f1f1;
+       font-weight: bold;
+       margin: 5px 15px;
+    }
+       
+    .nav__search {
+        margin: 5px 0px;
+    }
+
+    /* MAIN */
+    .main__index {
+        grid-area: main;
+       
+    }
+    .card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    
+    .card__p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #f1f1f1;
+        width: 50%;
+        text-align: center;
+        margin-left: 3%;
+    }
+    .card__imagenprincipal {
+        height: 70vh;
+        width: 100%;
+        border-radius: 20px;
+        margin: 0% 10% 0% 20%;
+    }
+
+    /*FOOTER*/
+    .footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        background-color: #D9B13B;
+        width: 100%;
+        height: auto;
+    }
+    .foot__redes {
+        display: none;
+    }
+
+    .foot__links {
+        flex-wrap: wrap;
+    }
+
+    .foot__p {
+        font-weight: bold;
+    }
+
+    /*integrantes GRID BODY*/
+
+.grid__integrantes {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"    
+    "grid__imagenes" 
+    "grid__imagenes"
+    "grid__imagenes" 
+    "grid__imagenes"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+.grid__imagenes{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.card2 {
+    height: 500px;
+    width: 500px;  
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.card__header{
+    background-color: #D9B13B;
+    height: 30px;
+    text-align: center;
+    
+}
+.card__epigrafe {
+    color: black;
+    font-weight: bold;
+}
+.card__body {
+    width: auto;
+    height: auto;
+}
+.card__img {
+    width: 500px;
+    height: 480px;
+}
+.card__video {
+    width: 496px;
+    height: 466px;
+}  
+/* MEDIA Discografia Main*/
+.grid__discografia {
+    display: grid;
+    grid-template-areas:    
+    "lista" 
+    "card6"
+    "card3" 
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;  
+}
+
+.lista__titulo {
+    font-size: large;
+}
+.lista__disco {
+    font-size: small;
+}
+
+.card6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card6__año {
+    padding: 5px;
+}
+.card6__interior {
+    padding: 5px;
+}
+.card3 {
+    overflow: hidden;
+    height: 400px;
+    width: 400px;  
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+/* MEDIA CONTACTO*/
+
+
+.grid__contacto {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "form"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.card__tit {
+   
+    background-color: #594218;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form {
+    margin-top: 0px;
+    margin-left: 0vh;
+    margin-right: 0vh;
+    margin-bottom: 0px; 
+    padding-bottom: 0px;
+    background-color: #594218;
+}
+
+
+}
