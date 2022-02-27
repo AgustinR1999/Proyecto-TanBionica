@@ -447,7 +447,7 @@ body {
     }
     
     /* HEADER */
-    .header {
+    .header1 {
         display: none;
     }
     
@@ -723,7 +723,7 @@ body {
         "main main"
         "footer footer";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10vh 10vh 70vh 10vh;
+        grid-template-rows: auto auto auto auto;
         row-gap: 20px;
         column-gap: 20px;
     }
@@ -735,9 +735,8 @@ body {
     }
 
     .header__titulo {
-        font-size: 5vh;
         color: black;
-        margin: 20px 20px;
+        margin: 10px 10px;
     }
     
     .header__titulomedia {
@@ -746,6 +745,7 @@ body {
     }
     .header__titmedia { 
         color: black;
+        margin: 10px 10px;
     }
 
        
