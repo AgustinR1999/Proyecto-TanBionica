@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="../images/logofavicon.PNG" sizes="64x64">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body class="grid__contacto">
@@ -40,31 +40,31 @@
     <main>
         <form class="form" action="Contacto.html" method="get">
             <h2 class="card__tit">Dejanos tu mensaje</h2>
-            <div class="form__nombre">
-                <label for="Nombre">Nombre</label>
-                <input type="text" placeholder="Nombre" required>
+            <div class="form__celda">
+                <label class="form__info" for="Nombre">Nombre</label>
+                <input class="form__contenido" type="text" placeholder="Nombre" required>
             </div>
             <br>
-            <div>
-                <label for="Apellido">Apellido</label>
-                <input name="Apellido" type="texto" placeholder="Apellido" required>
+            <div class="form__celda">
+                <label class="form__info" for="Apellido">Apellido</label>
+                <input class="form__contenido" name="Apellido" type="texto" placeholder="Apellido" required>
             </div>
             <br>
-            <div>
-                <label for="email">Correo electronico</label>
-                <input type="email" placeholder="usuario@mail.com" required>
+            <div class="form__celda">
+                <label class="form__info" for="email">Correo electronico</label>
+                <input class="form__contenido" type="email" placeholder="usuario@mail.com" required>
             </div>
             <br>
-            <div>
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="sexo">
-                <label for="femenino">Femenino</label>
-                <input type="radio" name="sexo">
+            <div class="form__celda">
+                <label class="form__info" for="masculino">Masculino</label>
+                <input class="form__contenido" type="radio" name="sexo">
+                <label class="form__info" for="femenino">Femenino</label>
+                <input class="form__contenido" type="radio" name="sexo">
             </div>
             <br>
-            <div>
-                <label for="">País</label>
-                <select name="País" id="">
+            <div class="form__celda">
+                <label class="form__info" for="pais">País</label>
+                <select class="form__contenido" name="País" id="">
                     <option value="País">-País-</option>
                     <option value="Afganistán">Afganistán</option>
                     <option value="Albania">Albania</option>
@@ -259,24 +259,28 @@
                 </select>
             </div>
             <br>
-            <div>
-                <h3>Como nos conocio</h3>
-                <input type="checkbox" name="Redes Sociales">
-                <label for="">Redes sociales</label>
-                <input type="checkbox" name="Referencia de personas">
-                <label for="">Referencia de personas</label>
-                <input type="checkbox" name="En Google">
-                <label for="">En Google</label>
-                <input type="checkbox" name="Otro">
-                <label for="">Otro</label>
+            <div class="form__celda">
+                <h3 class="form__info">Por donde nos conoces</h3>
+                <br>
+                <input class="form__contenido" type="checkbox" name="Redes Sociales">
+                <label for="redes">Redes sociales</label>
+                <input class="form__contenido" type="checkbox" name="Referencia de personas">
+                <label for="personas">Referencia de personas</label>
+                <input class="form__contenido" type="checkbox" name="En Google">
+                <label for="google">En Google</label>
+                <input class="form__contenido" type="checkbox" name="Otro">
+                <label class="form__contenido" for="otro">Otro</label>
             </div>
             <br>
-            <div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+            <div class="form__celda">
+                <textarea class="form__contenido" name="" id="" cols="30" rows="10"
+                    placeholder="Escriba su mensaje"></textarea>
             </div>
             <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
+            <div class="form__botones">
+                <input class="form__enviar" type="submit" value="Enviar">
+                <input class="form__limpiar" type="reset" value="Limpiar">
+            </div>
         </form>
     </main>
     <footer class="footer">

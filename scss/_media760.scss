@@ -1,0 +1,248 @@
+/*MEDIA Q TABLETS*/
+/*INDEX*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+
+    
+    /* HEADER */
+    .header1 {
+        display: none
+    }
+
+    .header__titulo {
+        color: black;
+        margin: 10px 10px;
+    }
+    
+    .header__titulomedia {
+        display: grid;
+        justify-items: center;
+        .header__titmedia { 
+            color: black;
+            margin: 10px 10px;
+        }
+    }
+     
+    /* NAV */
+       
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9B13B;
+        .nav__links {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 5px 0px;
+            .nav__item {
+                flex-direction: row;
+                flex-wrap: wrap;
+                .nav__link {
+                    text-decoration: none;
+                    color: #f1f1f1;
+                    font-weight: bold;
+                    margin: 5px 15px;
+                 }
+             }
+                
+        }
+         .nav__search {
+            margin: 5px 0px;
+        }
+    
+    }
+       
+    
+    /* MAIN index*/
+
+    .grid__index {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 20px;
+        column-gap: 20px;
+        .main__index {
+            grid-area: main;
+            .card {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                .card__p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #f1f1f1;
+                    width: 100%;
+                    text-align: center;
+                    margin-left: 0%;
+                    margin-bottom: 10px;
+                }
+                .card__imagenprincipal {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 20px;
+                    margin: 0%;
+                }
+              }
+        }
+    }
+    
+
+    /*FOOTER*/
+    .footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: center;
+        background-color: #D9B13B;
+        width: 100%;
+        height: auto;
+        .foot__links {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            .foot__redes {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding-bottom: 0px;
+            }
+            .foot__link { 
+                margin-left: 10px;
+               }
+        }
+        .foot__p {
+            flex-direction: column;
+        }
+    }
+    
+
+    /*integrantes GRID BODY*/
+
+.grid__integrantes {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"    
+    "grid__imagenes" 
+    "grid__imagenes"
+    "grid__imagenes" 
+    "grid__imagenes"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    .grid__imagenes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        .card2 {
+            height: 500px;
+            width: 500px;  
+            margin-bottom: 20px;
+            margin-left: 20px;
+            .card__header{
+                background-color: #D9B13B;
+                height: 30px;
+                text-align: center;
+                .card__epigrafe {
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+            .card__body {
+                width: auto;
+                height: auto;
+                .card__img {
+                    width: 500px;
+                    height: 480px;
+                }
+                .card__video {
+                    width: 496px;
+                    height: 466px;
+                }  
+            }
+        }
+    }
+}
+
+
+/* MEDIA Discografia Main*/
+.grid__discografia {
+    display: grid;
+    grid-template-areas:    
+    "lista" 
+    "card6"
+    "card3" 
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    .lista__titulo {
+        font-size: large;
+    }  
+    .lista__disco {
+        font-size: small;
+    }
+    .card6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        .card6__año {
+            padding: 5px;
+        }
+        .card6__interior {
+            padding: 5px;
+        }
+    }
+    .card3 {
+        overflow: hidden;
+        height: 400px;
+        width: 400px;  
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+/* MEDIA CONTACTO*/
+
+
+.grid__contacto {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "form"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    .form {
+        margin-top: 0px;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        margin-bottom: 0px; 
+        padding-bottom: 0px;
+        background-color: #594218;
+    .card__tit {
+        background-color: #594218;;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+}
+}
+

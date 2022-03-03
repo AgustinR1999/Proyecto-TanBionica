@@ -1,0 +1,32 @@
+/*header*/
+
+.header1 {
+    grid-area: header;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    color: #201240;
+}
+
+.header__titulomedia {
+    grid-area: header;
+    text-align: center;
+    display: none;
+    .header__titmedia {
+        font-size: 5vh;
+        color: black;
+        margin: 20px 20px;
+    }
+}
+.header {
+    grid-area: header;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    color: #201240;
+    .header__titulo {
+        font-size: 5vh;
+        color: black;
+        margin: 20px 20px;
+    }
+}

@@ -59,74 +59,74 @@ body {
 
 /* NAV */
 .nav__logo {
- margin-top: 20px;
- margin-bottom: 10px;
- max-width: 120px;
- max-height: 120px;
- border-radius: 10px;
- transition: 2s;
-}
-.nav__logo:hover {
-    transform: scale(1.3,1.3)
-}
-.nav {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: center;
-    background-color: #D9B13B ;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-
-.nav__links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.nav__item {
-    list-style: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    transition: 0.5s;
-}  
-
-.nav__item:hover {
-    transform: scale(1.3,1.3)
- }
- 
-
-.nav__link {
-    text-decoration: none;
-    color: #f1f1f1;
-    font-weight: bold;
-    margin-left: 20vh;
-    transition: 0.5s;
-}
-.nav__link:hover {
-    background-color: #594218;
-    color: #D9B13B;
-}
-
-.nav__search {
-    margin: 30px;
-}
-
-.nav__input {
-    height: 25px;
-    transition: all 1s;
-}
-.nav__input:hover {
-   background-color: #f7ead3;
-   transform: scale(1.3,1.3)
- }
- 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 10px;
+    transition: 2s;
+   }
+   .nav__logo:hover {
+       transform: scale(1.3,1.3)
+   }
+   .nav {
+       grid-area: nav;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: space-around;
+       align-content: center;
+       background-color: #D9B13B ;
+       position: sticky;
+       top: 0;
+       z-index: 2;
+   }
+   
+   
+   .nav__links {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       align-items: center;
+   }
+   
+   .nav__item {
+       list-style: none;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       transition: 0.5s;
+   }  
+   
+   .nav__item:hover {
+       transform: scale(1.3,1.3)
+    }
+    
+   
+   .nav__link {
+       text-decoration: none;
+       color: #f1f1f1;
+       font-weight: bold;
+       margin-left: 20vh;
+       transition: 0.5s;
+   }
+   .nav__link:hover {
+       background-color: #594218;
+       color: #D9B13B;
+   }
+   
+   .nav__search {
+       margin: 30px;
+   }
+   
+   .nav__input {
+       height: 25px;
+       transition: all 1s;
+   }
+   .nav__input:hover {
+      background-color: #f7ead3;
+      transform: scale(1.3,1.3)
+    }
+    
 
 /* MAIN */
 .main__index {

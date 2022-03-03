@@ -1,0 +1,289 @@
+/*MEDIA Q MOBILE*/
+/*INDEX*/
+
+@media screen and (max-width:480px) {
+    
+    /* HEADER */
+    .header1 {
+        display: none;
+    }
+    
+    .header {
+        display: none;
+    }
+
+    /* NAV */
+    
+    
+    .nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9B13B;
+        position: relative;
+        .nav__logo {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            max-width: 120px;
+            max-height: 120px;
+            border-radius: 10px;
+           }
+           .nav__links {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 5px 0px;
+            .nav__item {
+                flex-direction: row;
+                flex-wrap: wrap;
+                .nav__link {
+                    text-decoration: none;
+                    color: #f1f1f1;
+                    font-weight: bold;
+                    margin: 5px 15px;
+                }
+            }
+        }
+        .nav__search {
+            margin: 5px 0px;
+            .nav__input {
+                height: 20px;
+            }
+        }   
+    }
+    
+
+/* MAIN INDEX*/
+
+.grid__index {
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    .main__index {
+        grid-area: main; 
+    .card {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .card__p {
+            font-size: 16px;
+            width: 100%;
+            text-align: none;
+            margin: 0;
+        }
+        .card__imagenprincipal {
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+        }
+        
+      }
+}
+}
+
+
+
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #D9B13B;
+    width: 100%;
+    .foot__links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        .foot__redes {
+            margin-top: 5px;
+            padding-bottom: 10px;
+        }
+        .foot__link { 
+            margin-left: 0px;
+            text-decoration: none;
+           }
+        .foot__logos {
+            display: flex;
+            align-items: center;
+            .foot__logo {
+                margin-top: 0px;
+                margin-right: 10px;
+                max-width: 30px;
+                max-height: 30px;
+               }               
+        }   
+    }
+    .foot__p {
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+    }
+}
+
+
+/*MEDIA INTEGRANTES*/
+
+/*integrantes GRID BODY*/
+
+.grid__integrantes {
+    grid-template-areas: 
+    "nav"    
+    "grid__imagenes"
+    "grid__imagenes"
+    "grid__imagenes" 
+    "grid__imagenes"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 0px;
+    .grid__imagenes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .card2 {
+            height: auto;
+            width: auto;  
+            margin: 0px;
+            .card__header{
+                background-color: #D9B13B;
+                height: 30px;
+                text-align: center;
+                .card__img {
+                    width: auto;
+                    height: auto;
+                }    
+            }
+        }
+    }    
+}
+
+
+
+
+
+/* MEDIA Discografia Main*/
+.grid__discografia {
+    display: grid;
+    grid-template-areas:  
+    "nav"  
+    "lista" 
+    "card6"
+    "card3" 
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;  
+    .lista__titulo {
+        font-size: small;
+        font-weight: bold;
+    }
+    .lista__disco {
+        font-size: small;
+        font-weight: bold;
+    }
+    .card6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        .card6__año {
+            padding: 5px;
+        }
+        .card6__interior {
+            padding: 5px;
+        }
+    }
+    .card3 {
+        overflow: hidden;
+        height: auto;
+        width: auto;  
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA premios main*/
+
+.grid__premios {
+    display: grid;
+    grid-template-areas:    
+    "nav"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    .card__introp {
+        display: flex;
+        justify-content: center;
+        color: #f1f1f1;
+        font-weight: 500;
+        font-size: small;
+    }
+    .card5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        .card5__año {
+            padding: 5px;
+        }
+        .card5__interior {
+            padding: 5px;
+        }
+        .card5__ganador {
+            padding: 5px;
+        }
+        .card5__nominado {
+            padding: 5px;
+        }        
+    }
+}
+
+
+/* MEDIA CONTACTO*/
+
+
+.grid__contacto {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "form"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    .form {
+        color: #D9B13B;
+        margin-top: 0px;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        margin-bottom: 0px; 
+        padding-bottom: 0px;
+        background-color: #594218;
+        .card__tit {
+            color: #f1f1f1;
+            background-color: #594218;;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    } 
+}
+
+
