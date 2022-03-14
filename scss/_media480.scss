@@ -20,7 +20,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background-color: #D9B13B;
+        background-color: $colorsecundario;
         position: relative;
         .nav__logo {
             margin-top: 5px;
@@ -91,10 +91,6 @@
 
 /*FOOTER*/
 .footer {
-    display: flex;
-    justify-content: center;
-    background-color: #D9B13B;
-    width: 100%;
     .foot__links {
         display: flex;
         flex-direction: column;
@@ -141,7 +137,7 @@
     "grid__imagenes" 
     "grid__imagenes"
     "footer";
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     row-gap: 20px;
     column-gap: 0px;
@@ -154,7 +150,7 @@
             width: auto;  
             margin: 0px;
             .card__header{
-                background-color: #D9B13B;
+                background-color: $colorsecundario;
                 height: 30px;
                 text-align: center;
                 .card__img {
@@ -269,7 +265,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     .form {
-        color: #D9B13B;
+        color: $colorsecundario;
         margin-top: 0px;
         margin-left: 0vh;
         margin-right: 0vh;

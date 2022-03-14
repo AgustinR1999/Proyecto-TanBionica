@@ -1,14 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background-color: #594218;
-  font-family: 'Roboto', sans-serif; }
-
 /*header*/
 .header1 {
   grid-area: header;
@@ -64,9 +55,7 @@ body {
     flex-wrap: nowrap;
     align-items: center; }
     .nav .nav__links .nav__item {
-      list-style: none;
-      flex-direction: row;
-      flex-wrap: nowrap; }
+      list-style: none; }
   .nav .nav__link {
     text-decoration: none;
     color: #f1f1f1;
@@ -88,6 +77,7 @@ body {
 
 .footer {
   grid-area: footer;
+  bottom: 0;
   display: flex;
   justify-content: center;
   background-color: #D9B13B;
@@ -116,6 +106,15 @@ body {
       margin-left: 20px;
       padding-bottom: 20px;
       font-weight: bold; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #594218;
+  font-family: 'Roboto', sans-serif; }
 
 /*INDEX GRID*/
 .grid__index {
@@ -409,6 +408,7 @@ body {
         font-weight: bold;
         padding: 5px;
         margin: 5px;
+        border-radius: 10px;
         transition: 0.5s; }
         .grid__contacto .form .form__botones .form__enviar:hover {
           background-color: #00d800; }
@@ -418,6 +418,7 @@ body {
         font-weight: bold;
         padding: 5px;
         margin: 5px;
+        border-radius: 10px;
         transition: 0.5s; }
         .grid__contacto .form .form__botones .form__limpiar:hover {
           background-color: red; }
@@ -483,41 +484,36 @@ body {
           width: 300px;
           margin: 10px; }
   /*FOOTER*/
-  .footer {
+  .footer .foot__links {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    background-color: #D9B13B;
-    width: 100%; }
-    .footer .foot__links {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center; }
-      .footer .foot__links .foot__redes {
-        margin-top: 5px;
-        padding-bottom: 10px; }
-      .footer .foot__links .foot__link {
-        margin-left: 0px;
-        text-decoration: none; }
-      .footer .foot__links .foot__logos {
-        display: flex;
-        align-items: center; }
-        .footer .foot__links .foot__logos .foot__logo {
-          margin-top: 0px;
-          margin-right: 10px;
-          max-width: 30px;
-          max-height: 30px; }
-    .footer .foot__p {
-      margin-top: 0px;
+    align-items: center; }
+    .footer .foot__links .foot__redes {
+      margin-top: 5px;
+      padding-bottom: 10px; }
+    .footer .foot__links .foot__link {
       margin-left: 0px;
-      padding-bottom: 0px;
-      margin-bottom: 5px; }
+      text-decoration: none; }
+    .footer .foot__links .foot__logos {
+      display: flex;
+      align-items: center; }
+      .footer .foot__links .foot__logos .foot__logo {
+        margin-top: 0px;
+        margin-right: 10px;
+        max-width: 30px;
+        max-height: 30px; }
+  .footer .foot__p {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px; }
   /*MEDIA INTEGRANTES*/
   /*integrantes GRID BODY*/
   .grid__integrantes {
     grid-template-areas: "nav"     "grid__imagenes" "grid__imagenes" "grid__imagenes"  "grid__imagenes" "footer";
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     row-gap: 20px;
     column-gap: 0px; }
@@ -765,6 +761,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto; }
     .grid__contacto .form {
+      color: #D9B13B;
       margin-top: 0px;
       margin-left: 0vh;
       margin-right: 0vh;
@@ -772,6 +769,176 @@ body {
       padding-bottom: 0px;
       background-color: #594218; }
       .grid__contacto .form .card__tit {
+        color: #f1f1f1;
+        background-color: #594218;
+        margin-top: 20px;
+        margin-bottom: 20px; } }
+
+/*MEDIA Q 1200px*/
+/*INDEX*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /* HEADER */
+  .header1 {
+    display: none; }
+  .header__titulo {
+    color: black;
+    margin: 10px 10px; }
+  .header__titulomedia {
+    display: grid;
+    justify-items: center; }
+    .header__titulomedia .header__titmedia {
+      color: black;
+      margin: 10px 10px; }
+  /* NAV */
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9B13B; }
+    .nav .nav__links {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 5px 0px; }
+      .nav .nav__links .nav__item {
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .nav .nav__links .nav__item .nav__link {
+          text-decoration: none;
+          color: #f1f1f1;
+          font-weight: bold;
+          margin: 5px 15px; }
+    .nav .nav__search {
+      margin: 5px 0px; }
+  /* MAIN index*/
+  .grid__index {
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px; }
+    .grid__index .main__index {
+      grid-area: main; }
+      .grid__index .main__index .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; }
+        .grid__index .main__index .card .card__p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: x-large;
+          color: #f1f1f1;
+          width: 100%;
+          text-align: center;
+          margin-left: 0%;
+          margin-bottom: 10px; }
+        .grid__index .main__index .card .card__imagenprincipal {
+          height: 50%;
+          width: 100%;
+          border-radius: 20px;
+          margin: 0%; }
+  /*FOOTER*/
+  .footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: #D9B13B;
+    width: 100%;
+    height: auto; }
+    .footer .foot__links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center; }
+      .footer .foot__links .foot__redes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 0px; }
+      .footer .foot__links .foot__link {
+        margin-left: 10px; }
+    .footer .foot__p {
+      flex-direction: column; }
+  /*integrantes GRID BODY*/
+  .grid__integrantes {
+    display: grid;
+    grid-template-areas: "header" "nav"     "grid__imagenes"  "grid__imagenes" "grid__imagenes"  "grid__imagenes" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 50px;
+    column-gap: 50px; }
+    .grid__integrantes .grid__imagenes {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; }
+      .grid__integrantes .grid__imagenes .card2 {
+        height: 500px;
+        width: 500px;
+        margin-bottom: 20px;
+        margin-left: 20px; }
+        .grid__integrantes .grid__imagenes .card2 .card__header {
+          background-color: #D9B13B;
+          height: 30px;
+          text-align: center; }
+          .grid__integrantes .grid__imagenes .card2 .card__header .card__epigrafe {
+            color: black;
+            font-weight: bold; }
+        .grid__integrantes .grid__imagenes .card2 .card__body {
+          width: auto;
+          height: auto; }
+          .grid__integrantes .grid__imagenes .card2 .card__body .card__img {
+            width: 500px;
+            height: 480px; }
+          .grid__integrantes .grid__imagenes .card2 .card__body .card__video {
+            width: 496px;
+            height: 466px; }
+  /* MEDIA Discografia Main*/
+  .grid__discografia {
+    display: grid;
+    grid-template-areas: "lista"  "card6" "card3"  "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto; }
+    .grid__discografia .lista__titulo {
+      font-size: large; }
+    .grid__discografia .lista__disco {
+      font-size: small; }
+    .grid__discografia .card6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; }
+      .grid__discografia .card6 .card6__año {
+        padding: 5px; }
+      .grid__discografia .card6 .card6__interior {
+        padding: 5px; }
+    .grid__discografia .card3 {
+      overflow: hidden;
+      height: 400px;
+      width: 400px;
+      margin-bottom: 20px;
+      margin-left: 20px; }
+  /* MEDIA CONTACTO*/
+  .grid__contacto {
+    display: grid;
+    grid-template-areas: "header" "nav" "form" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto; }
+    .grid__contacto .form {
+      color: #D9B13B;
+      margin-top: 0px;
+      margin-left: 0vh;
+      margin-right: 0vh;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      background-color: #594218; }
+      .grid__contacto .form .card__tit {
+        color: #f1f1f1;
         background-color: #594218;
         margin-top: 20px;
         margin-bottom: 20px; } }

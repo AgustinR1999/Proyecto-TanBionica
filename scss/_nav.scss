@@ -7,7 +7,7 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-content: center;
-    background-color: #D9B13B ;
+    background-color: $colorsecundario ;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -29,8 +29,6 @@
     align-items: center;
     .nav__item {
         list-style: none;
-        flex-direction: row;
-        flex-wrap: nowrap;
     }
     }
 .nav__link {
@@ -42,7 +40,7 @@
 &:hover {
     font-size: 1.5rem;
     background-color: #594218;
-    color: #D9B13B;
+    color: $colorsecundario;
 }    } 
 
 .nav__search {
