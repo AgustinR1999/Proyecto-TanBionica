@@ -377,6 +377,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        /* por el momento no va a ser utilizado...
         .form__enviar{
             background-color: rgb(10, 172, 10);
             color: black;
@@ -400,7 +401,7 @@ body {
             &:hover{
                 background-color: rgb(255, 0, 0) ;
             } 
-        }
+        }*/
     }
 }
 }
