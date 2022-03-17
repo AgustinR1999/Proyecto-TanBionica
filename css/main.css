@@ -1,52 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
-/*map*/
-.btn--inicio {
-  color: #55acee; }
-
-.btn--integrantes {
-  color: #3a5795; }
-
-.btn--contacto {
-  color: green; }
-
-.btn--discografia {
-  color: black; }
-
-.btn--premios {
-  color: #C25E30; }
-
-/*mapget*/
-.card__p {
-  background-color: #D9B13B;
-  text-align: center;
-  padding: 1rem;
-  font-size: 25px; }
-
-/*extend*/
-.form__botones, .boton--enviar, .boton--limpiar {
-  width: 200px;
-  height: 50px;
-  background-color: blanchedalmond;
-  text-align: center;
-  color: black;
-  border-radius: 20px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-around; }
-
-.boton--enviar {
-  background-color: green;
-  color: black; }
-
-.boton--limpiar {
-  background-color: red;
-  color: black; }
-
-.card__p {
-  height: 500px;
-  width: 500px; }
-
 /*header*/
 .header1 {
   grid-area: header;
@@ -105,7 +58,7 @@
       list-style: none; }
   .nav .nav__link {
     text-decoration: none;
-    /*color: #f1f1f1;*/
+    color: #f1f1f1;
     font-weight: bold;
     margin-left: 20vh;
     transition: 0.5s; }
@@ -117,6 +70,7 @@
     margin: 30px; }
     .nav .nav__search .nav__input {
       height: 25px;
+      border-radius: 10px;
       transition: all 1s; }
       .nav .nav__search .nav__input:hover {
         background-color: #f7ead3;
@@ -243,8 +197,8 @@ body {
   grid-template-areas: "lista card6" "card3 card3" "footer footer";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
-  row-gap: 20px;
-  column-gap: 20px; }
+  row-gap: 30px;
+  column-gap: 30px; }
   .grid__discografia .lista {
     display: flex;
     flex-direction: column;
@@ -323,16 +277,6 @@ body {
         width: 496px;
         height: 466px; }
 
-/* etiqueta por si vuelvo agregar los subtitulos en las páginas 
-.card__titulo { 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #201240;
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    } */
-/*premios main*/
 .grid__premios {
   display: grid;
   grid-template-areas: "header" "nav" "main" "footer";
@@ -445,35 +389,30 @@ body {
       transition: 0,5s; }
       .grid__contacto .form .form__celda .form__contenido:hover {
         background-color: #f7ead3; }
-    .grid__contacto .form .form__botones, .grid__contacto .form .boton--enviar, .grid__contacto .form .boton--limpiar {
+    .grid__contacto .form .form__botones {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      /* por el momento no va a ser utilizado...
-        .form__enviar{
-            background-color: rgb(10, 172, 10);
-            color: black;
-            font-weight: bold;
-            padding: 5px;
-            margin: 5px;
-            border-radius: 10px;
-            transition: 0.5s;
-            &:hover{
-                background-color: rgb(0, 216, 0) ;
-            } 
-        }
-        .form__limpiar{
-            background-color: rgb(219, 37, 13);
-            color: black;
-            font-weight: bold;
-            padding: 5px;
-            margin: 5px;
-            border-radius: 10px;
-            transition: 0.5s;
-            &:hover{
-                background-color: rgb(255, 0, 0) ;
-            } 
-        }*/ }
+      flex-wrap: nowrap; }
+      .grid__contacto .form .form__botones .form__enviar {
+        background-color: #0aac0a;
+        color: black;
+        font-weight: bold;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10px;
+        transition: 0.5s; }
+        .grid__contacto .form .form__botones .form__enviar:hover {
+          background-color: #00d800; }
+      .grid__contacto .form .form__botones .form__limpiar {
+        background-color: #db250d;
+        color: black;
+        font-weight: bold;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 10px;
+        transition: 0.5s; }
+        .grid__contacto .form .form__botones .form__limpiar:hover {
+          background-color: red; }
 
 /*MEDIA Q MOBILE*/
 /*INDEX*/
