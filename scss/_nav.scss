@@ -33,13 +33,13 @@
     }
 .nav__link {
     text-decoration: none;
-    color: #f1f1f1;
+    color: $colortextos;
     font-weight: bold;
     margin-left: 20vh;
     transition: 0.5s;
 &:hover {
     font-size: 1.5rem;
-    background-color: #594218;
+    background-color: $colorprimario;
     color: $colorsecundario;
 }    } 
 

@@ -40,7 +40,7 @@
                 flex-wrap: wrap;
                 .nav__link {
                     text-decoration: none;
-                    color: #f1f1f1;
+                    color: $colortextos;
                     font-weight: bold;
                     margin: 5px 15px;
                 }
@@ -169,13 +169,14 @@
 /* MEDIA Discografia Main*/
 .grid__discografia {
     display: grid;
+    justify-items: normal;
     grid-template-areas:  
     "nav"  
     "lista" 
     "card6"
     "card3" 
     "footer";
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;  
     .lista__titulo {
         font-size: small;
@@ -198,11 +199,16 @@
         }
     }
     .card3 {
+        flex-wrap: wrap;
         overflow: hidden;
         height: auto;
         width: auto;  
-        margin: 10px;
-    }
+        margin: 10px; 
+        .card__video {
+            width: auto;
+            height: auto;
+            }
+        }
 }
 
 
@@ -228,7 +234,7 @@
     .card__introp {
         display: flex;
         justify-content: center;
-        color: #f1f1f1;
+        color: $colortextos;
         font-weight: 500;
         font-size: small;
     }
@@ -271,10 +277,10 @@
         margin-right: 0vh;
         margin-bottom: 0px; 
         padding-bottom: 0px;
-        background-color: #594218;
+        background-color: $colorprimario;
         .card__tit {
-            color: #f1f1f1;
-            background-color: #594218;;
+            color: $colortextos;
+            background-color: $colorprimario;
             margin-top: 20px;
             margin-bottom: 20px;
         }

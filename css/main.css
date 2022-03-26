@@ -194,17 +194,20 @@ body {
 /* Discografia Main*/
 .grid__discografia {
   display: grid;
+  justify-items: center;
   grid-template-areas: "lista card6" "card3 card3" "footer footer";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   row-gap: 30px;
   column-gap: 30px; }
   .grid__discografia .lista {
+    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: start;
     margin-top: 20px; }
     .grid__discografia .lista .lista__titulo {
+      list-style: none;
       text-align: center;
       text-decoration: underline;
       color: black;
@@ -214,6 +217,7 @@ body {
       .grid__discografia .lista .lista__titulo:hover {
         font-size: xxx-large; }
     .grid__discografia .lista .lista__disco {
+      list-style: none;
       color: #f1f1f1;
       font-weight: 700;
       text-align: center;
@@ -526,8 +530,9 @@ body {
   /* MEDIA Discografia Main*/
   .grid__discografia {
     display: grid;
+    justify-items: normal;
     grid-template-areas: "nav"   "lista"  "card6" "card3"  "footer";
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto; }
     .grid__discografia .lista__titulo {
       font-size: small;
@@ -545,10 +550,14 @@ body {
       .grid__discografia .card6 .card6__interior {
         padding: 5px; }
     .grid__discografia .card3 {
+      flex-wrap: wrap;
       overflow: hidden;
       height: auto;
       width: auto;
       margin: 10px; }
+      .grid__discografia .card3 .card__video {
+        width: auto;
+        height: auto; }
   /* MEDIA premios main*/
   .grid__premios {
     display: grid;
