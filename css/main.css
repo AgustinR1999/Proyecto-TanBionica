@@ -581,9 +581,9 @@ body {
       font-size: small; }
     .grid__premios .card5 {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: stretch;
       overflow: scroll;
+      align-items: center;
       margin-top: 20px; }
       .grid__premios .card5 .card5__año {
         padding: 5px; }

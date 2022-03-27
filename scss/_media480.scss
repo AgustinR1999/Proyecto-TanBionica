@@ -245,9 +245,9 @@
     }   
     .card5 {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: stretch;
         overflow: scroll;
+        align-items: center;
         margin-top: 20px;
         .card5__año {
             padding: 5px;
