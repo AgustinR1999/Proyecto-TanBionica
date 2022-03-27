@@ -580,7 +580,11 @@ body {
       font-weight: 500;
       font-size: small; }
     .grid__premios .card5 {
-      overflow: auto; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: scroll;
+      margin-top: 20px; }
       .grid__premios .card5 .card5__año {
         padding: 5px; }
       .grid__premios .card5 .card5__interior {

@@ -244,7 +244,11 @@
         font-size: small;
     }   
     .card5 {
-        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        margin-top: 20px;
         .card5__año {
             padding: 5px;
         }
