@@ -507,23 +507,28 @@ body {
   /*MEDIA INTEGRANTES*/
   /*integrantes GRID BODY*/
   .grid__integrantes {
-    grid-template-areas: "nav"     "grid__imagenes" "grid__imagenes" "grid__imagenes"  "grid__imagenes" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "nav"     "grid__imagenes" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
     row-gap: 20px;
     column-gap: 0px; }
     .grid__integrantes .grid__imagenes {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap; }
+      margin: 0%; }
       .grid__integrantes .grid__imagenes .card2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: auto;
         height: auto;
         width: auto;
-        margin: 0px; }
+        margin: 10px; }
         .grid__integrantes .grid__imagenes .card2 .card__header {
-          background-color: #D9B13B;
-          height: 30px;
-          text-align: center; }
+          text-align: justify;
+          font-size: small;
+          height: auto;
+          width: auto; }
           .grid__integrantes .grid__imagenes .card2 .card__header .card__img {
             width: auto;
             height: auto; }
@@ -555,6 +560,8 @@ body {
       height: auto;
       width: auto;
       margin: 10px; }
+      .grid__discografia .card3 .card__header {
+        display: flex; }
       .grid__discografia .card3 .card__video {
         width: auto;
         height: auto; }
@@ -562,10 +569,10 @@ body {
   .grid__premios {
     display: grid;
     grid-template-areas: "nav" "main" "footer";
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    row-gap: 20px;
-    column-gap: 20px; }
+    row-gap: 10px;
+    column-gap: 10px; }
     .grid__premios .card__introp {
       display: flex;
       justify-content: center;
@@ -573,10 +580,7 @@ body {
       font-weight: 500;
       font-size: small; }
     .grid__premios .card5 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px; }
+      overflow: auto; }
       .grid__premios .card5 .card5__año {
         padding: 5px; }
       .grid__premios .card5 .card5__interior {
