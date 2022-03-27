@@ -1,0 +1,21 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    .text__404 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: $colortextos;
+        font-weight: bold;
+        font-size: 3rem;
+    }  
+    .text__404link {
+        color: $colorsecundario;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+

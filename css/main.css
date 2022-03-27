@@ -942,3 +942,20 @@ body {
         background-color: #594218;
         margin-top: 20px;
         margin-bottom: 20px; } }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap; }
+  .text .text__404 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 3rem; }
+  .text .text__404link {
+    color: #D9B13B;
+    font-weight: bold;
+    font-size: 2rem; }
